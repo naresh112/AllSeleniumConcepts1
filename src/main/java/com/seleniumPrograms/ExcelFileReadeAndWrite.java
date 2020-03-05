@@ -2,10 +2,10 @@ package com.seleniumPrograms;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -16,32 +16,33 @@ import org.testng.annotations.Test;
 
 public class ExcelFileReadeAndWrite {
 	//me
-	@Test
+	//@Test
 	public void excelReader() throws IOException {
 		File fil = new File("C:\\Users\\madhu\\Desktop\\i temp\\demoExcelFile.xlsx");
 		FileInputStream fis = new FileInputStream(fil);
 		Workbook wb = new XSSFWorkbook(fis);
+		Workbook wb2 = new HSSFWorkbook(fis);
+		
 		Sheet sht = wb.getSheetAt(0);
 		Row row = sht.getRow(0);
 		System.out.println(sht.getLastRowNum() + 1);
 	}
 	
-	//@Test
+	@Test
 	public void ExcelWrite() throws IOException {
-		FileInputStream fis=new FileInputStream("C:\\Users\\madhu\\Desktop\\i temp\\demoExcelFile.xlsx");
-		XSSFWorkbook wb=new XSSFWorkbook(fis);
-		Sheet sh=wb.getSheetAt(0);
-		Row row=sh.getRow(1);
-		FileOutputStream wedata=new FileOutputStream("C:\\Users\\madhu\\Desktop\\i temp\\demoExcelFile.xlsx");
-			row.createCell(10).setCellValue("fail");
-			wb.write(wedata);
-			wb.close();
+		File file = new File("C:\\Users\\madhu\\Desktop\\i temp\\demoExcelFile.xlsx");
+		FileInputStream fis = new FileInputStream(file);
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		Sheet sh = wb.getSheetAt(0);
+		Row row = sh.getRow(1);
+		row.createCell(10).setCellValue("fail-fail");
+		FileOutputStream wedata = new FileOutputStream("C:\\Users\\madhu\\Desktop\\i temp\\demoExcelFile.xlsx");
+		wb.write(wedata);
+		wb.close();
 	}
-	
-	//@Test--me
-	
-	
-	
+
+	// @Test--me
+
 	//@Test
 		public void writeDataFromExcel(int rowcount, int columncount, String filepath, String Sheetname, String value) {
 			try {

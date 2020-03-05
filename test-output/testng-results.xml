@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1420" started-at="2020-02-23T08:01:49Z" finished-at="2020-02-23T08:01:50Z">
+  <suite name="Default suite" duration-ms="2605" started-at="2020-03-04T08:51:23Z" finished-at="2020-03-04T08:51:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1420" started-at="2020-02-23T08:01:49Z" finished-at="2020-02-23T08:01:50Z">
+    <test name="Default test" duration-ms="2605" started-at="2020-03-04T08:51:23Z" finished-at="2020-03-04T08:51:25Z">
       <class name="com.seleniumPrograms.ExcelFileReadeAndWrite">
-        <test-method status="PASS" signature="ExcelWrite()[pri:0, instance:com.seleniumPrograms.ExcelFileReadeAndWrite@4b9e13df]" name="ExcelWrite" duration-ms="1273" started-at="2020-02-23T08:01:49Z" finished-at="2020-02-23T08:01:50Z">
+        <test-method status="PASS" signature="ExcelWrite()[pri:0, instance:com.seleniumPrograms.ExcelFileReadeAndWrite@4b9e13df]" name="ExcelWrite" duration-ms="2546" started-at="2020-03-04T08:51:23Z" finished-at="2020-03-04T08:51:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExcelWrite -->
-        <test-method status="PASS" signature="excelReader()[pri:0, instance:com.seleniumPrograms.ExcelFileReadeAndWrite@4b9e13df]" name="excelReader" duration-ms="84" started-at="2020-02-23T08:01:50Z" finished-at="2020-02-23T08:01:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excelReader -->
       </class> <!-- com.seleniumPrograms.ExcelFileReadeAndWrite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
