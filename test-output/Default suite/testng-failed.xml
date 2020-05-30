@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.seleniumPrograms.temp">
+      <class name="com.qa.applicationName.testPages.CreateAccountPageTest">
         <methods>
-          <include name="Login"/>
+          <include name="tearDown"/>
+          <include name="validateTitle"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.seleniumPrograms.temp -->
+      </class> <!-- com.qa.applicationName.testPages.CreateAccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
