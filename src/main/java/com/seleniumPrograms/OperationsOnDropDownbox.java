@@ -21,7 +21,7 @@ import org.openqa.selenium.support.ui.Select;
  * etc....
  */
 
-public class OperationsOnDownbox {
+public class OperationsOnDropDownbox {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
